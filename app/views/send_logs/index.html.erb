@@ -1,0 +1,17 @@
+<h1>Send Logs</h1>
+
+<table class="table">
+  <thead><tr><th>Time</th><th>Contact</th><th>Template</th><th>Recipient</th><th>Subject</th></tr></thead>
+  <tbody>
+    <% @logs.each do |l| %>
+      <tr>
+        <td><%= l.created_at %></td>
+        <td><%= l.contact&.name %></td>
+        <td><%= l.email_template&.name %></td>
+        <td><%= l.recipient_email %></td>
+        <td><%= l.subject %></td>
+        <td><%= link_to 'View', send_log_path(l), class: 'btn btn-sm btn-outline-secondary' %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>

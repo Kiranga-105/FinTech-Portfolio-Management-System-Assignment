@@ -1,0 +1,9 @@
+<h1>Contact: <%= @contact.name %></h1>
+<p>Email: <%= @contact.email %></p>
+<p>Organization: <%= @contact.organization&.name %></p>
+<h3>Portfolios</h3>
+<ul>
+  <% @contact.portfolios.each do |p| %>
+    <li>Balance: <%= p.balance %>, Performance: <%= p.performance %></li>
+  <% end %>
+</ul>
