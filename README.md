@@ -35,3 +35,8 @@
 - I replaced sqlite3 with `pg` as required by the assignment. Ensure PostgreSQL server is running and accessible.
 - The JS addition is intentionally minimal to satisfy the "some JS usage" requirement — it adds a toggle for shortcode previews; you can expand it.
 - Tests included are basic/smoke tests to show test structure. Please expand to cover more cases (models, shortcode parsing, controllers) as needed.
+
+URL's
+http://localhost:3000/contacts
+http://localhost:3000/email_templates
+http://localhost:3000/send_logs.
